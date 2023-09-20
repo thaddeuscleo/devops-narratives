@@ -7,11 +7,14 @@
 	import 'open-props/buttons';
 
 	import PageTransition from './transition.svelte';
+	import Analytics from '$lib/analytics.svelte';
 
 	import '../app.css';
 
 	export let data;
 </script>
+
+<Analytics />
 
 <div class="layout">
 	<!-- Header -->
