@@ -1,5 +1,5 @@
 ---
-title: Containerized Your Apps
+title: WTH is Container?
 description: What is container basically? And should i containerized my app ?
 date: '2023-9-19'
 categories:
@@ -11,11 +11,11 @@ published: true
 
 ## Sharing My Experience with Deploying Applications
 
-I want to share my experience with deploying applications to a production environment. During application development, we often use a localized runtime environment that may differ from the production setup. This difference can lead to unexpected behavior when the application goes live in production. This situation is commonly known as "IWM" or "It Works on My Machine." Thankfully, this issue can be effectively resolved by utilizing containerization technology.
+I want to share my experience with deploying applications to a production environment. During application development, we often use a localized runtime environment that may differ from the production setup. This difference can lead to unexpected behavior when the application goes live in production. This situation is commonly known as **"IWM"** or **"It Works on My Machine"** Thankfully, this issue can be effectively resolved by utilizing containerization technology.
 
 ## So, What Are Containers, Essentially?
 
-Containers are essentially technologies that allow you to package your application into an isolated environment. This environment can include the application runtime along with all the necessary files to run your application. This approach reduces the complications when moving the application across different environments like development, staging, and production. By doing this, the application exhibits consistent behavior across environments.
+Containers are essentially technologies that allow you to package your application into an **isolated** environment. This environment can include the application runtime along with all the necessary files to run your application. This approach reduces the complications when moving the application across different environments like development, staging, and production. By doing this, the application exhibits consistent behavior across environments.
 
 ## Are Consistency Across Different Environments the Only Benefit?
 
