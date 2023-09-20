@@ -5,6 +5,7 @@ date: '2023-9-19'
 categories:
   - Container
   - Docker
+  - Linux
 published: true
 ---
 
@@ -38,13 +39,7 @@ To start using container technologies, you have several runtime options. A great
 
 1. Remove existing conflicting packages.
 ```bash
-for pkg in \\
-  docker.io \\
-  docker-doc \\
-  docker-compose \\
-  podman-docker \\
-  containerd \\
-  runc; do sudo apt-get remove $pkg; done;
+for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done;
 ```
 
 2. Set up Docker's Apt repository.
@@ -80,4 +75,5 @@ sudo usermod -aG docker $USER
 ```
 
 Congratulations! you now able to start your container journey. 
-Stay tune on how to containerized application. If you have any topics  
+Stay tune on how to containerized your existing application. 
+If you have any topics to discuss you may kindly send issues [here](https://github.com/thaddeuscleo/devops-narratives/issues)
