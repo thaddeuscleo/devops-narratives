@@ -38,11 +38,13 @@ Alternatively, you can create new instances of your application by generating ad
 To start using container technologies, you have several runtime options. A great starting point, in my opinion, is Docker. It's known for its user-friendliness and intuitive nature. You can begin by either installing Docker Desktop or by installing it on your WSL2 system using the following command:
 
 1. Remove existing conflicting packages.
+
 ```bash
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done;
 ```
 
 2. Set up Docker's Apt repository.
+
 ```bash
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -60,20 +62,23 @@ sudo apt-get update
 ```
 
 3. Install the Docker packages.
+
 ```bash
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
 4. Create the `docker` group.
+
 ```bash
 sudo groupadd docker
 ```
 
 5. Add your user to the docker group.
+
 ```bash
 sudo usermod -aG docker $USER
 ```
 
-Congratulations! you now able to start your container journey. 
-Stay tune on how to containerized your existing application. 
+Congratulations! you now able to start your container journey.
+Stay tune on how to containerized your existing application.
 If you have any topics to discuss you may kindly send issues [here](https://github.com/thaddeuscleo/devops-narratives/issues)

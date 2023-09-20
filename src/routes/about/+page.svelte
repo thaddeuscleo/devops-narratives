@@ -19,7 +19,7 @@
 	have a mind of their own! I swear, they're all different and unique, each with its own special
 	purpose... or so I tell myself!
 </p>
-<br>
+<br />
 
 <h2>The Computers?</h2>
 <br />

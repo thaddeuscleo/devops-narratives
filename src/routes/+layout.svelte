@@ -1,20 +1,20 @@
 <script lang="ts">
-	import Footer from './footer.svelte'
-	import Header from './header.svelte'
+	import Footer from './footer.svelte';
+	import Header from './header.svelte';
 
-	import 'open-props/style'
-	import 'open-props/normalize'
-	import 'open-props/buttons'
+	import 'open-props/style';
+	import 'open-props/normalize';
+	import 'open-props/buttons';
 
-	import PageTransition from './transition.svelte'
+	import PageTransition from './transition.svelte';
 
-	import '../app.css'
+	import '../app.css';
 
-	export let data
+	export let data;
 </script>
 
 <div class="layout">
-  <!-- Header -->
+	<!-- Header -->
 	<Header />
 
 	<main>
@@ -23,7 +23,7 @@
 		</PageTransition>
 	</main>
 
-  <!-- Footer -->
+	<!-- Footer -->
 	<Footer />
 </div>
 

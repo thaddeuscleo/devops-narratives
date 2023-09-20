@@ -1,12 +1,12 @@
-import * as config from '$lib/config'
-import type { Post } from '$lib/types'
-import type { RequestHandler } from './$types'
+import * as config from '$lib/config';
+import type { Post } from '$lib/types';
+import type { RequestHandler } from './$types';
 
-export const GET: RequestHandler  = async ({ fetch }) => {
-	const response = await fetch('api/posts')
-	const posts: Post[] = await response.json()
+export const GET: RequestHandler = async ({ fetch }) => {
+	const response = await fetch('api/posts');
+	const posts: Post[] = await response.json();
 
-	const headers = { 'Content-Type': 'application/xml' }
+	const headers = { 'Content-Type': 'application/xml' };
 
 	const xml = `
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
@@ -30,7 +30,7 @@ export const GET: RequestHandler  = async ({ fetch }) => {
 					.join('')}
 			</channel>
 		</rss>
-	`.trim()
+	`.trim();
 
-	return new Response(xml, { headers })
-}
+	return new Response(xml, { headers });
+};
